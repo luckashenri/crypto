@@ -1,3 +1,13 @@
-// run `node index.js` in the terminal
+import crypto from 'crypto';
 
-console.log(`Hello Node.js v${process.versions.node}!`);
+const cred = {
+  login: 'test',
+  password: 'test123',
+};
+
+function encrypt(cred) {
+  console.log('encrypting', cred);
+}
+
+encrypt(cred);
+// dencrypt(cred);
